@@ -39,13 +39,14 @@ public class MaxPilhaIndex {
         }
 
         public int maxPilhaIndex(int index) {
-            int primeiro = pop();
-            int maior = primeiro;
-            push(primeiro);
+            int maior = 0;
 
             Pilha auxPilha = new Pilha(index+1);
             for (int i = 0; i <= index; i++) {
                 int valor = pop();
+
+                if (i == 0)
+                    maior = valor;
 
                 if (maior < valor)
                     maior = valor;
