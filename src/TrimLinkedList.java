@@ -7,6 +7,7 @@ public class TrimLinkedList {
         Scanner sc = new Scanner(System.in);
         String[] nums = sc.nextLine().split(" ");
         String qnt = sc.nextLine();
+        sc.close();
 
         for (int i = 0; i < nums.length; i++)
             ll.addLast(Integer.parseInt(nums[i]));
