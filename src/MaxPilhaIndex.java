@@ -38,15 +38,16 @@ public class MaxPilhaIndex {
             return this.pilha[this.topo--];
         }
 
+        public int peek() {
+            return this.pilha[this.topo];
+        }
+
         public int maxPilhaIndex(int index) {
-            int maior = 0;
+            int maior = peek();
 
             Pilha auxPilha = new Pilha(index+1);
             for (int i = 0; i <= index; i++) {
                 int valor = pop();
-
-                if (i == 0)
-                    maior = valor;
 
                 if (maior < valor)
                     maior = valor;
