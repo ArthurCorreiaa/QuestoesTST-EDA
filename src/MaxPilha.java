@@ -7,6 +7,7 @@ public class MaxPilha {
         Scanner sc = new Scanner(System.in);
 
         int[] valores = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        sc.close();
         
         Pilha pilha = new Pilha(valores.length);
         for (int valor : valores) 
@@ -62,7 +63,7 @@ public class MaxPilha {
             
             return maior;
         }
-        
+
     }
 
 }
