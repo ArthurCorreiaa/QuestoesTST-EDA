@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Parenteses {
     // Primeira opção
-    public static void main1(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         String parenteses = sc.nextLine();
