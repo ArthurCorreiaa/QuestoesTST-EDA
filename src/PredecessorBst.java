@@ -55,6 +55,7 @@ class BST {
                 }
             }
         }
+        size++;
     }
 
     public ArrayList<Integer> predecessor(int value) {
@@ -66,7 +67,7 @@ class BST {
             while (currNode.parent != null) {
                 caminho.add(currNode.parent.value);
                 if (currNode.value > currNode.parent.value) break;
-                
+
                 currNode = currNode.parent;
             }
         } else {
