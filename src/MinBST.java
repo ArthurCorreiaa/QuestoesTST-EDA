@@ -22,11 +22,11 @@ public class MinBST {
 
     public static class BST {
         private Node root;
-        private int size;
+        // private int size;
 
         public BST() {
             root = null;
-            size = 0;
+            // size = 0;
         }
 
         public boolean isEmpty() {
@@ -57,7 +57,7 @@ public class MinBST {
                     }
                 }
             }
-            size++;
+            // size++;
         }
 
         public ArrayList<Integer> findMin() {
