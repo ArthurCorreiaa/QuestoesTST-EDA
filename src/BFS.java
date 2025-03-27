@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -18,7 +17,7 @@ public class BFS {
         for (int v : caminho) 
             out += v + " ";
 
-        System.out.println(out.substring(0, out.length()-1));
+        System.out.println(out.trim());
     }
 
     public static class BST {

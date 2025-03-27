@@ -19,7 +19,7 @@ public class BFSDireita {
         for (int v : caminho) 
             out += v + " ";
 
-        System.out.println(out.substring(0, out.length()-1));
+        System.out.println(out.trim());
     }
 
     public static class BST {
